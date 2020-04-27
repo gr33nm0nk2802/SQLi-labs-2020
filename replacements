@@ -1,0 +1,10 @@
+mysql_connect() -> mysqli_connect()
+mysql_query($sql) -> mysqli_query($con, $sql)
+mysql_error() -> mysqli_error($con)
+mysql_fetch_array($result) -> mysqli_fetch_array($result, MYSQLI_BOTH) 
+mysql_fetch_array($result1) -> mysql_fetch_array($result1, MYSQLI_BOTH)
+mysql_connect($host,$dbuser,$dbpass) -> mysqli_connect($host,$dbuser,$dbpass)
+mysql_real_escape_string($value) -> mysqli_real_escape_string($con, $value)
+mysql_select_db($dbname,$con) -> mysqli_select_db($con, $dbname)
+
+mysqld_safe --skip-grant-tables
